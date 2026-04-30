@@ -1,0 +1,110 @@
+<!-- Validated on 4/30/2026 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body2">
+<header id="header2">
+    <p>Comment Form</p>
+</header>
+
+<main>
+<form action="submit.html" method="get" id="Commentform">
+
+    <!-- Input Fields -->
+    <div class="form-box">
+
+        <section class="form-content-box">
+            <h2>Personal Information</h2>
+            <div class="box">
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lname" required><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+            </div>
+        </section>
+
+        <!-- Radio Buttons -->
+        <section class="form-content-box">
+            <h2>Help Information</h2>
+            <div class="box">
+                <p>Did you find the guide helpful?</p>
+
+                <label><input type="radio" name="help" value="yes"> Yes</label>
+                <label><input type="radio" name="help" value="no"> No</label>
+                <label><input type="radio" name="help" value="not_sure"> Not Sure</label>
+
+                <textarea id="help_info" name="help_info"
+                    placeholder="Please provide the reasoning for your answer:"></textarea>
+            </div>
+        </section>
+
+        <!-- Checkboxes -->
+        <section class="form-content-box">
+            <h3>Most Helpful</h3>
+            <div class="box">
+                <p>What part did you find the most helpful?</p>
+
+                <label><input type="checkbox" name="inspection" value="inspection"> Inspection</label>
+                <label><input type="checkbox" name="tools" value="tools"> Tools Needed</label>
+                <label><input type="checkbox" name="dissembly" value="dissembly"> Disassembly</label>
+                <label><input type="checkbox" name="test" value="test"> Test Repair</label>
+            </div>
+        </section>
+
+        <!-- Dropdown Menu -->
+        <section class="form-content-box">
+            <h3>Least Helpful</h3>
+            <div class="box">
+                <label for="least">What did you find least helpful?</label>
+                <select id="least" name="least" required>
+                    <option value="" disabled selected>Please select one</option>
+                    <option value="verify">Verify</option>
+                    <option value="tools">Tools</option>
+                    <option value="disassembly">Disassembly</option>
+                    <option value="inspection">Inspection</option>
+                    <option value="test_install">Test</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Text Area -->
+        <section class="form-content-box">
+            <h3>Comments</h3>
+            <div class="box">
+                <label for="comments">Comments: </label>
+                <textarea id="comments" name="comments"
+                    placeholder="Any other comments you would like to leave, please enter here."></textarea>
+            </div>
+        </section>
+
+        <!-- Buttons -->
+        <div>
+            <div id="form-actions">
+                <button type="reset">Reset Form</button>
+                <button type="button" onclick="location.href='success.html'">Success</button>
+                <button type="button" onclick="location.href='index.html'">Home</button>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+</main>
+
+<footer id="footer2">
+    <p>&copy; 2026. Created and maintained by James Wyckoff.</p>
+    <p>Last updated: [date]</p>
+</footer>
+
+</body>
+</html>

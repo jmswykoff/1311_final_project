@@ -1,0 +1,167 @@
+<!-- Validated on 4/30/26 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tools Needed</h1>
+        <p>Tools needed for the repair</p>
+
+        <nav class="side-nav">
+            <img src="autorepair.svg" class="nav-logo" alt="navlogo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="verify.html">Verify the Issue</a></li>
+                <li><a href="tools.html">Tools Needed</a></li>
+                <li><a href="disassembly.html">Disassembly</a></li>
+                <li><a href="inspection.html">Inspection of parts</a></li>
+                <li><a href="installtest.html">Installation Test</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-grid">
+
+        <div class="content-box">
+            <p>
+                You only need a hand full of tools to replace a broken outter door handle. 
+                You will need:
+            </p>
+
+            <img src="tools.JPG" class="image-rotate" alt="image">
+        </div>
+
+        <div class="content-box">
+            <ul class="tool-checklist">
+                <li class="check-item">
+                    <label>
+                        <input type="checkbox">
+                        Gloves
+                    </label>
+                </li>
+                <li class="check-item">
+                    <label>
+                        <input type="checkbox">
+                        Phillips head screwdriver
+                    </label>
+                </li>
+                <li class="check-item">
+                    <label>
+                        <input type="checkbox">
+                        Small flat head screwdriver or pick
+                    </label>
+                </li>
+                <li class="check-item">
+                    <label>
+                        <input type="checkbox">
+                        Basic tool set
+                    </label>
+
+                    <!-- Nested list -->
+                    <ul class="tool-checklist">
+                        <li class="check-item">
+                            <label>
+                                <input type="checkbox">
+                                Wratchet
+                            </label>
+                        </li>
+                        <li class="check-item">
+                            <label>
+                                <input type="checkbox">
+                                Extension
+                            </label>
+                        </li>
+                        <li class="check-item">
+                            <label>
+                                <input type="checkbox">
+                                8mm and 10mm sockets (my vehicle)
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="check-item">
+                    <label>
+                        <input type="checkbox">
+                        Suction cup (optional but helpful)
+                    </label>
+                </li>
+                <li class="check-item">
+                    <label>
+                        <input type="checkbox">
+                        Trim removal tool
+                    </label>
+                </li>
+                <li class="check-item">
+                    <label>
+                        <input type="checkbox">
+                        Flashlight
+                    </label>
+                </li>
+            </ul>
+
+            <button id="reset-tools">Reset Checklist</button>
+
+            <script>
+                document.getElementById("reset-tools").addEventListener("click", () => {
+                    document.querySelectorAll(".tool-checklist input[type='checkbox']").forEach(box => {
+                        box.checked = false;
+                    });
+                });
+            </script>
+        </div>
+
+        <div class="content-box">
+            <p>
+                If you do not have the proper tools there are many places to acquire them. 
+                You can go to your local auto parts store, Harbor Freight, Walmart or shop online. 
+                I have provided a couple of links to get you started.
+            </p>
+        </div>
+
+        <div class="content-box">
+            <p>
+                Amazon:
+                <br>
+                <a href="https://www.amazon.com/dp/B0GL6J15FC" target="_blank" rel="noopener noreferrer">
+                    HORFUTY Car Dent Puller on Amazon
+                </a>
+                <br>
+                <a href="https://www.amazon.com/dp/B0DFPQ4VY8" target="_blank" rel="noopener noreferrer">
+                    SWIFTLITE Black Vinyl Gloves (Medium) on Amazon
+                </a>
+
+                <br><br>
+
+                Harbor Freight:
+                <br>
+                <a href="https://www.harborfreight.com/14-in-38-in-12-in-drive-sae-and-metric-socket-set-51-piece-63013.html"
+                   target="_blank" rel="noopener noreferrer">
+                    Harbor Freight Socket Set (51‑Piece)
+                </a>
+                <br>
+                <a href="https://www.harborfreight.com/nylon-pry-bar-installer-kit-4-piece-63594.html"
+                   target="_blank" rel="noopener noreferrer">
+                    Trim Removal Kit
+                </a>
+            </p>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2026 . Created and maintained by James Wyckoff.</p>
+        <p>Last updated: [date]</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

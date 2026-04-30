@@ -1,0 +1,434 @@
+/*-------------------------------------------------
+Global
+---------------------------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    --side-nav: 110px;
+}
+
+/* ------------------------------------------------
+html, Body
+---------------------------------------------------- */
+html,
+body {
+    
+    font-size: 20px;
+    font-family: Inter, Roboto, Open Sans;
+    background-color: rgb(206, 206, 206);
+    display: block;
+    flex-direction: column;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex:1;
+}
+
+/* -------------------------------------------------
+Header
+---------------------------------------------------*/
+header {
+    background-color:#032181;
+    color: white;
+    margin-left: 0px;
+    text-align: center;
+    padding: 20px; 
+    border-bottom: 2px solid black;
+    box-shadow: 0 3px 50px black;  
+}
+
+#header2{
+    background-color:#032181;
+    color: white;
+    margin-left: 0px;
+    text-align: center;
+    padding: 20px; 
+    border-bottom: 2px solid black;
+    box-shadow: 0 3px 50px black; 
+}
+
+#footer2 {
+    font-size: 0.7em;
+    background-color: #032181;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+ /* Responsive design----------------------------------- */
+/* Desktop - Main layout --------------------------------*/
+@media (min-width: 1024px){
+    .content-grid { 
+        margin-left: 110px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 110px;
+        margin-top: 10px;
+        gap:20px;
+    }
+
+---------/* Keep header2/footer2 full width on mobile -------------------------*/
+    #header2,
+    #footer2 {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        margin-left: 110px;
+    }
+}
+
+/* ---------------------------------------------------
+Tablet
+ -------------------------------------------------------*/
+@media (min-width: 750px) and (max-width: 1023px) {
+    body {
+        font-size: 18px; 
+        background-color: rgb(160, 160, 160);
+        margin-left: 110px;
+    }
+
+    #body2 {
+        margin-left: 0px;
+        font-size: 14px;
+        background-color: rgb(133, 133, 133);
+    }
+
+    html {
+        font-size: 18px; 
+        background-color: rgb(160, 160, 160);
+        margin-left: 0px;
+    }
+}
+    
+
+
+/* Keep header2/footer2 full width on mobile-------------------------------------- */
+    #header2,
+    #footer2 
+    {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        max-width: 100%;
+    }
+
+/* -----------------------------------------------------------------------
+Mobile
+ -------------------------------------------------------------------------*/
+@media (max-width: 749px) {
+    .side-nav {
+        width: 70px;
+    }
+    .side-nav a {
+        font-size: 0.7rem;
+    }
+
+    body {
+        margin-left: 40px;
+        font-size: 14px;
+        background-color: rgb(133, 133, 133);
+    }
+
+    #body2 {
+        margin-left: 0px;
+        font-size: 14px;
+        background-color: rgb(133, 133, 133);
+    }
+
+    header,
+    footer {
+        margin-left: 70px;
+        text-align: center;
+    }
+
+/* Keep header2/footer2 full width on mobile ---------------------------------------*/
+    #header2,
+    #footer2 {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+
+    footer {
+        max-width: calc(100% - 70px);
+    }
+}
+
+/*-------------------------------------------------------------- 
+Nav Logo (.SVG)
+ -----------------------------------------------------------------*/
+.nav-logo {
+    width: 50px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* ----------------------------------------------------------------------
+Left Navigation Bar
+------------------------------------------------------------------------- */
+.side-nav {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 110px;
+    background: #032181;
+    padding: 2px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    border-right: 2px solid black;
+    font-size: 0.8rem;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.side-nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    margin: 2px 0;
+    padding: 6px 0;
+}
+
+.side-nav a:hover {
+    background: rgba(12, 117, 158, 0.63);
+    color: rgb(250, 234, 8);
+    border-radius: 10%;
+    transition: 0.5s ease;
+    padding: 2px 0;
+    transform:rotate(5deg);
+}
+
+/* -----------------------------------------------------------------
+h2 element
+ ----------------------------------------------------------------*/
+.h2 {
+    font-family:serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------------------------
+Content boxes
+---------------------------------------------------------------------- */
+.content-box {
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.589);
+}
+
+/*------------------------------------------------------------------------ 
+In section images
+ --------------------------------------------------------------------*/
+#container {
+    display: block;
+    margin: 20px auto;
+    max-width: 70%;
+    height: auto;
+    border-radius: 10%;
+    border: 2px solid #032181;
+    padding: 3px;
+    background: rgb(209, 209, 209);
+}
+
+.image {
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+    height: auto;
+    border-radius: 10%;
+    border: 3px solid #032181;
+    padding: 3px;
+    background: rgb(209, 209, 209);
+}
+
+.image-rotate {
+    transform: rotate(90deg);
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    height: auto;
+    border-radius: 10%;
+    border: 2px solid #032181;
+    padding: 3px;
+    background: rgb(209, 209, 209);
+}
+
+/* ---------------------------------------------------------------------
+UL
+------------------------------------------------------------------------ */
+.content-box ul {
+    list-style: none;
+    /*text-align: left;*/
+    margin-left: 20px;
+    border-radius: none;
+}
+
+/* ------------------------------------------------------------------------
+Tool list checkbox reset button
+----------------------------------------------------------------------*/
+#reset-tools {
+    margin-left: 100px;
+    padding: 8px 14px;
+    background-color: #2872c6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#reset-tools:hover {
+    background-color: #b71c1c;
+    transform: translateX(20px);
+}
+
+/* ------------------------------------------------------------------------
+Submit return home button 
+-------------------------------------------------------------------------*/
+#success-return {
+    margin-left: 100px;
+    padding: 8px 14px;
+    background-color: #1633d6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/*--------------------------------------------------------------------------
+Form boxes
+--------------------------------------------------------------------------*/
+
+#success-return:hover {
+    background-color: #107407;
+    transform: skewY(10deg);
+}
+
+.form-box {
+    background-color: rgb(216, 216, 216);
+    width: 90%;
+    max-width: 770px;
+    margin: 20px auto;
+    padding: 8px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.589);
+}
+
+.form-content-box {
+    background-color: rgb(255, 255, 255);
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.589);
+    width: 100%;
+    max-width: 700px;;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------------------------
+Form buttons 
+---------------------------------------------------------------------------*/
+button,
+.form-actions {
+    margin-left: 100px;
+    padding: 8px 14px;
+    background-color:#032181;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    font-weight: bold; 
+    transition: .5s;
+}
+
+#form-actions button:hover {
+    background-color: #0c5e09;
+    transform:scaleX(70%);
+}
+
+/* ------------------------------------------------------------------------------
+Submit page content box 
+--------------------------------------------------------------------------------*/
+#success-box {
+    background-color: rgb(248, 248, 248);
+    width: 90%;
+    max-width: 770px;
+    margin: 20px auto;
+    padding: 8px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.589);
+}
+
+/* --------------------------------------------------------------------------------
+Video 
+--------------------------------------------------------------------------------*/
+#video {
+    border-color:rgb(160, 159, 159);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*----------------------------------------------------------------------------------- 
+Footer 
+------------------------------------------------------------------------------------*/
+footer {
+    font-size: 0.7em;
+    background-color: #032181;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+
