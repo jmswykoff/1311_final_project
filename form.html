@@ -14,7 +14,7 @@
 </header>
 
 <main>
-<form action="submit.html" method="get" id="Commentform">
+<form action="submit.html" method="get" id="commentForm">
 
     <!-- Input Fields -->
     <div class="form-box">
@@ -44,7 +44,7 @@
                 <label><input type="radio" name="help" value="not_sure"> Not Sure</label>
 
                 <textarea id="help_info" name="help_info"
-                    placeholder="Please provide the reasoning for your answer:"></textarea>
+                    placeholder="Please provide the reason for your answer:"></textarea>
             </div>
         </section>
 
@@ -56,7 +56,7 @@
 
                 <label><input type="checkbox" name="inspection" value="inspection"> Inspection</label>
                 <label><input type="checkbox" name="tools" value="tools"> Tools Needed</label>
-                <label><input type="checkbox" name="dissembly" value="dissembly"> Disassembly</label>
+                <label><input type="checkbox" name="disassembly" value="disassembly"> Disassembly</label>
                 <label><input type="checkbox" name="test" value="test"> Test Repair</label>
             </div>
         </section>
@@ -88,12 +88,10 @@
         </section>
 
         <!-- Buttons -->
-        <div>
-            <div id="form-actions">
-                <button type="reset">Reset Form</button>
-                <button type="button" onclick="location.href='success.html'">Success</button>
-                <button type="button" onclick="location.href='index.html'">Home</button>
-            </div>
+        <div id="form-actions">
+            <button type="reset">Reset Form</button>
+            <button type="button" onclick="location.href='success.html'">Success</button>
+            <button type="button" onclick="location.href='index.html'">Home</button>
         </div>
 
     </div>
@@ -103,7 +101,7 @@
 
 <footer id="footer2">
     <p>&copy; 2026. Created and maintained by James Wyckoff.</p>
-    <p>Last updated: [date]</p>
+    <p>Last updated: 4/30/26</p>
 </footer>
 
 </body>
