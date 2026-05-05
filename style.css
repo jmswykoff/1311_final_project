@@ -7,15 +7,15 @@ Global
     --side-nav: 110px;
 }
 
-/* ------------------------------------------------
-html, Body
+/*------------------------------------------------
+html, main, body
 ---------------------------------------------------- */
 html,
 body {
     
     font-size: 20px;
     font-family: Inter, Roboto, Open Sans;
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(160, 160, 160);
     display: block;
     flex-direction: column;
     line-height: 1.5;
@@ -28,10 +28,10 @@ body {
 }
 
 main {
-    flex:1;
+    flex: 1;
 }
 
-/* -------------------------------------------------
+/*-------------------------------------------------
 Header
 ---------------------------------------------------*/
 header {
@@ -54,18 +54,12 @@ header {
     box-shadow: 0 3px 50px black; 
 }
 
-#footer2 {
-    font-size: 0.7em;
-    background-color: #032181;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    border-top: 2px solid black;
-}
 
- /* Responsive design----------------------------------- */
-/* Desktop - Main layout --------------------------------*/
+
+/*---------------------------------------------------------
+Responsive design
+Desktop - Main layout
+---------------------------------------------------------*/
 @media (min-width: 1024px){
     .content-grid { 
         margin-left: 110px;
@@ -76,7 +70,9 @@ header {
         gap:20px;
     }
 
----------/* Keep header2/footer2 full width on mobile -------------------------*/
+/*-------------------------------------------------------------
+Keep header2/footer2 full width on mobile
+-------------------------------------------------------------*/
     #header2,
     #footer2 {
         margin-left: 0;
@@ -102,7 +98,7 @@ Tablet
     #body2 {
         margin-left: 0px;
         font-size: 14px;
-        background-color: rgb(133, 133, 133);
+        background-color: rgb(160, 160, 160);
     }
 
     html {
@@ -113,8 +109,9 @@ Tablet
 }
     
 
-
-/* Keep header2/footer2 full width on mobile-------------------------------------- */
+/*------------------------------------------------------------------
+Keep header2/footer2 full width on mobile
+----------------------------------------------------------------- */
     #header2,
     #footer2 
     {
@@ -141,13 +138,13 @@ Mobile
     body {
         margin-left: 40px;
         font-size: 14px;
-        background-color: rgb(133, 133, 133);
+        background-color: rgb(160, 160, 160);
     }
 
     #body2 {
         margin-left: 0px;
         font-size: 14px;
-        background-color: rgb(133, 133, 133);
+        background-color: rgb(160, 160, 160);
     }
 
     header,
@@ -156,7 +153,9 @@ Mobile
         text-align: center;
     }
 
-/* Keep header2/footer2 full width on mobile ---------------------------------------*/
+/*--------------------------------------------------------------------- 
+Keep header2/footer2 full width on mobile
+---------------------------------------------------------------------*/
     #header2,
     #footer2 {
         margin-left: 0;
@@ -431,4 +430,12 @@ footer {
     border-top: 2px solid black;
 }
 
-
+#footer2 {
+    font-size: 0.7em;
+    background-color: #032181;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    border-top: 2px solid black;
+}
